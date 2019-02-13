@@ -23,6 +23,11 @@ var resultado =  numeroEntero2 + 5
 
 var 😃 = 10
 
+var num = 2
+
+var res = 😃 + num
+
+
 
 
 

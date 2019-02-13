@@ -11,6 +11,7 @@ let constante  = "Nunca cambio"
 
 variable = "otro valor"
 
+
 //saldria error al asignar lun nuevo dato a una constante
 //constante  = "volver a cambiar"
 
