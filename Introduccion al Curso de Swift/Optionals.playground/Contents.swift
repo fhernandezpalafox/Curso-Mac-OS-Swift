@@ -15,13 +15,22 @@ import UIKit
 //el signo de interrogacion va ser nil o null
 var xOptional : Int?
 
-xOptional = 15
+//xOptional = 15
 
 var y : Int = 10
 
-//print(xOptional)
+print(xOptional)
 
-var suma = xOptional! + y
+//var suma = xOptional! + y
+
+
+
+if let suma2 = xOptional {
+    print("El resultado es "+String(suma2 + y))
+}else
+{
+    print("Error")
+}
 
 
 

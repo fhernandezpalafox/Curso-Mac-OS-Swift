@@ -9,7 +9,8 @@
 import Cocoa
 
 class ViewController: NSViewController {
-
+ 
+  
     @IBOutlet weak var lblinformacion: NSTextField!
     @IBOutlet weak var slider: NSSlider!
     @IBOutlet weak var imagen: NSImageView!
@@ -20,6 +21,8 @@ class ViewController: NSViewController {
         lblinformacion.intValue = slider.intValue
         
         imagen.setFrameSize(NSMakeSize(CGFloat(slider.floatValue), CGFloat(slider.floatValue)))
+        
+        
     }
 
     override func viewDidLoad() {

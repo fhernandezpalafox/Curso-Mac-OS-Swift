@@ -17,41 +17,40 @@ class ViewController: NSViewController {
     @IBAction func mostrarInformacion(_ sender: Any) {
         
         //Formatter
-        //let format = DateFormatter()
+        let format = DateFormatter()
         
-        //format.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        format.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        
         //Bloque 1
         
         //Toma la fecha del sistema
         
-        //let fecha2: String = format.string(from: Date())
+      /*  let fecha2: String = format.string(from: Date())
         
-        //let str: String = "La \("\(txtDescripcion.stringValue)") es: \("\(fecha2)")"
+        let str: String = "La \("\(txtDescripcion.stringValue)") es: \("\(fecha2)")"
         
-        //lbldato.stringValue = String(str)
+        lbldato.stringValue = String(str)
         
-        //lbldato.sizeToFit()
+        lbldato.sizeToFit()
+      */
         
         //Bloque 2
        
-        /*let fecha: String = format.string(from: (dtFecha.dateValue))
+         let fecha: String = format.string(from: (dtFecha.dateValue))
         
-        let str = "La \("\(txtDescripcion.stringValue)") es: \(fecha)"
- 
+         let str = "La \("\(txtDescripcion.stringValue)") es: \(fecha)"
         
-         //let str: String = "La \("\(txtDescripcion.stringValue)") es: \("\(dtFecha.stringValue)")"
-        
-        lbldato.stringValue = String(str)
+         lbldato.stringValue = String(str)
          
-        lbldato.sizeToFit()
-       */
+         lbldato.sizeToFit()
+    
         
         //Bloque 3
-        let str: String = "La \("\(txtDescripcion.stringValue)") es: \("\(dtFecha.stringValue)")"
+       /* let str: String = "La \("\(txtDescripcion.stringValue)") es: \("\(dtFecha.stringValue)")"
         
         lbldato.stringValue = String(str)
         
-        lbldato.sizeToFit()
+        lbldato.sizeToFit()*/
     }
     
     override func viewDidLoad() {

@@ -28,7 +28,7 @@ class ViewController: NSViewController {
     @IBAction func cambia(_ sender: Any) {
        
         lblInformacion.stringValue = popUp.titleOfSelectedItem!
-        
+        lblInformacion.sizeToFit()
     }
 
     

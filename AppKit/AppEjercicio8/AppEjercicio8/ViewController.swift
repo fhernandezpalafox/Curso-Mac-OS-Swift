@@ -10,8 +10,7 @@ import Cocoa
 import WebKit
 
 class ViewController: NSViewController, WKNavigationDelegate {
-    
-    
+
     @IBOutlet weak var indicator: NSProgressIndicator!
     
     @IBOutlet weak var txtUrl: NSTextField!
@@ -47,8 +46,6 @@ class ViewController: NSViewController, WKNavigationDelegate {
         }
     }
 
-    
-    
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
         indicator.isHidden = false
         indicator.startAnimation(self)

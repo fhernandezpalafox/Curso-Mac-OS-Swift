@@ -9,11 +9,12 @@
 import Cocoa
 
 class ViewController: NSViewController {
-
     
     @IBOutlet weak var txtNum1: NSTextField!
     @IBOutlet weak var txtNum2: NSTextField!
     @IBOutlet weak var lblResultado: NSTextField!
+    
+    
     
     @IBAction func Operacion(_ sender: Any) {
         //Creacion de variables

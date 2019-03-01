@@ -6,14 +6,14 @@ import UIKit
 
 var arreglo:[String] = ["a","b"]
 
-arreglo.insert("c", atIndex: 2)
+arreglo.insert("c", at: 2)
 
-arreglo.removeAtIndex(0)
+arreglo.remove(at: 0)
 
-arreglo.insert("d", atIndex: 0)
+arreglo.insert("d", at: 0)
 
 
-var valorIndiceCero = arreglo[1]
+var valorIndiceCero = arreglo[0]
 
 
 //Diccionarios
@@ -27,3 +27,5 @@ var diccionario: [String:String] =
 diccionario["d"] = "Tercera letra del abecedario"
 
 var  valorLetraB =  diccionario["b"]
+
+print(diccionario)

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE165E93221F554E00A13C10 /* Informacion.png in Resources */ = {isa = PBXBuildFile; fileRef = CE165E92221F554E00A13C10 /* Informacion.png */; };
 		FCB25614203E362000D6582C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB25613203E362000D6582C /* AppDelegate.swift */; };
 		FCB25616203E362000D6582C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB25615203E362000D6582C /* ViewController.swift */; };
 		FCB25618203E362000D6582C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCB25617203E362000D6582C /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE165E92221F554E00A13C10 /* Informacion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Informacion.png; path = ../../../../../../Downloads/Informacion.png; sourceTree = "<group>"; };
 		FCB25610203E362000D6582C /* AppEjercicio3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppEjercicio3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB25613203E362000D6582C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCB25615203E362000D6582C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 		FCB25612203E362000D6582C /* AppEjercicio3 */ = {
 			isa = PBXGroup;
 			children = (
+				CE165E92221F554E00A13C10 /* Informacion.png */,
 				FCB25623203E364400D6582C /* iconInformation.png */,
 				FCB25613203E362000D6582C /* AppDelegate.swift */,
 				FCB25615203E362000D6582C /* ViewController.swift */,
@@ -131,6 +134,7 @@
 				FCB25624203E364400D6582C /* iconInformation.png in Resources */,
 				FCB25618203E362000D6582C /* Assets.xcassets in Resources */,
 				FCB2561B203E362000D6582C /* Main.storyboard in Resources */,
+				CE165E93221F554E00A13C10 /* Informacion.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +282,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.felipe.AppEjercicio3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -293,7 +297,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.felipe.AppEjercicio3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

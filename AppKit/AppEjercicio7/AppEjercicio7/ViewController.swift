@@ -44,14 +44,12 @@ class ViewController: NSViewController , NSTableViewDataSource {
         
         if row != -1 {
              lista.remove(at: row)
-            tabla.reloadData()
+             tabla.reloadData()
         }else {
             print("Error")
         }
         
     }
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,6 +77,7 @@ class ViewController: NSViewController , NSTableViewDataSource {
         return lista.count
     }
     
+
     func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
         
       let p: Persona? = lista[row]

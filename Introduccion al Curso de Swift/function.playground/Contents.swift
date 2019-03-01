@@ -27,7 +27,7 @@ Operacion(param: 10)
 
 
 //funcion que retorna un dato
-func OperacionConReturn(param : Int) -> Int {
+func OperacionConReturn(param:Int)->Int {
     
     var x = param
     
@@ -40,13 +40,13 @@ var resultado = OperacionConReturn(param: 10)
 
 
 //funcion que manda mas de un parametro
-func enteroPorDos(parametro1:Int,parametro2:Int) -> Int{
+func enteroPorDos(_ parametro1:Int,_ parametro2:Int) -> Int{
 
     return parametro1 * parametro2
 }
 
 
-var resultado2 = enteroPorDos(parametro1: 10,parametro2: 10)
+var resultado2 = enteroPorDos(10,10)
 
 
 

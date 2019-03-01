@@ -25,8 +25,7 @@ let artista = Artista()
 
 var resultado = artista.obtenerEdad(num1:2017,num2:1987)
 
-    artista.Imprimir()
-
+artista.Imprimir()
 
 print("Tiene \(resultado) años de edad")
 
@@ -55,6 +54,8 @@ class Cancion {
         cancionnew.Duracion = 3.00
         cancionnew.Album = "Torero"
         
+       
+        
         if cancionnew.Titulo == cancion.Titulo && cancionnew.Album == cancion.Album{
             return true
         } else {
@@ -63,7 +64,7 @@ class Cancion {
     }
     
     func Copia() -> Any{
-        let copy = Cancion()
+        let copy = self
         return copy
     }
 }

@@ -8,9 +8,9 @@ class Artista{
     var Descripcion:String
     
     init(No:String, Na:Int, Des:String){
-        self.Nombre=No
-        self.Nacimiento=Na
-        self.Descripcion=Des
+        self.Nombre = No
+        self.Nacimiento = Na
+        self.Descripcion = Des
     }
     func imprimir(){
     }

@@ -12,4 +12,8 @@ var propiedadCompu:Int {
     
 }
 
+var num1  = 10
+
+var res =  propiedadCompu + num1
+
 propiedadCompu

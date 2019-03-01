@@ -17,16 +17,17 @@ class CustomViewController: NSViewController {
     
     
     @IBAction func eventCancelar(_ sender: Any) {
-        dismissViewController(self)
+        dismiss(self)
     }
+    
     @IBAction func eventAceptar(_ sender: Any) {
-        dismissViewController(self)
+        dismiss(self)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        
         //Asignacion de los datos desde la creacion del NSViewController
-        
         titulo.stringValue  = "Este es mi titulo"
         
         descripcion.stringValue  = "Esta es una descripcion larga"
