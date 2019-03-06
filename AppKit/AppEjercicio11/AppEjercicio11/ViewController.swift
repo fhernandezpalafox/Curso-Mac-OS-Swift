@@ -35,9 +35,13 @@ class ViewController: NSViewController {
         // Do any additional setup after loading the view.
         
         let coordenada: CLLocationCoordinate2D = CLLocationCoordinate2DMake(21.152676, -101.711698)
-        let region: MKCoordinateRegion = MKCoordinateRegionMakeWithDistance(coordenada, 2000, 2000)
+        
+        let region: MKCoordinateRegion = MKCoordinateRegion(center: coordenada, latitudinalMeters: 2000, longitudinalMeters: 2000)
+        
         let anotacion = MKPointAnnotation()
+        
         anotacion.title = "De La Salle Bajio"
+        
         anotacion.coordinate = coordenada
         
         mapa.region = region

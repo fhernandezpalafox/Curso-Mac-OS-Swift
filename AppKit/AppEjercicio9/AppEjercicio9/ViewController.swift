@@ -37,6 +37,7 @@ class ViewController: NSViewController {
 
         let nombres = ["Juan", "Pedro", "Oscar"]
         lista.addItems(withTitles: nombres)
+        lista.menu?.insertItem(NSMenuItem.separator(), at: 2)
     }
 
     override var representedObject: Any? {
