@@ -31,16 +31,15 @@ class ViewController: NSViewController {
         if txtUsuario.stringValue == "felipe" && txtPassword.stringValue == "fe"
         {
         
-            let storyboard = NSStoryboard(name: NSStoryboard.Name(rawValue: "Main"), bundle: Bundle.main)
+            let storyboard = NSStoryboard(name: "Main", bundle: Bundle.main)
             
-let controller = storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "Principal")) as? PrincipalViewController
-            
+        let controller =
+            storyboard.instantiateController(withIdentifier: "Principal") as?  PrincipalViewController
             
             controller?.usuario = txtUsuario.stringValue
             
-            
             if let aController = controller {
-                controller?.presentViewControllerAsModalWindow(aController)
+                controller?.presentAsModalWindow(aController)
             }
         }
     }

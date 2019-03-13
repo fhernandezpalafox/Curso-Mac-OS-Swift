@@ -44,6 +44,7 @@ class ViewController: NSViewController {
             print("Error")
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

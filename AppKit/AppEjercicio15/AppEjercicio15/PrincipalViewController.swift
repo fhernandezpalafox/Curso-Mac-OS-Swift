@@ -19,6 +19,7 @@ class PrincipalViewController: NSViewController {
         // Do view setup here.
         
         lblDato.stringValue = "Bienvenido \(usuario)"
+        lblDato.sizeToFit()
     }
     
 }
