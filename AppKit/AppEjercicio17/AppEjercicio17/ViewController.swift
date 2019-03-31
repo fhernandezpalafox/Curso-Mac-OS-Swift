@@ -20,30 +20,30 @@ class ViewController: NSViewController {
     
     //Inicializacion de datos de los diferentes modelos
     var department1 = Departamento (nombre:"Depto. Ingenieria",
-                                    icono:NSImage (named: NSImage.Name(rawValue: "Department-50")))
+                                    icono:NSImage (named: "Department-50"))
     var department2 = Departamento (nombre:"Depto. Licenciatura",
-                                    icono:NSImage (named: NSImage.Name(rawValue: "Department-50")))
+                                    icono:NSImage (named: "Department-50"))
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let account1 = Cuenta(nombre:"Account 1",icono:NSImage (named: NSImage.Name(rawValue: "account")))
+        let account1 = Cuenta(nombre:"Account 1",icono:NSImage (named: "account"))
         
-        let employee10 = Empleado (nombre: "Debasis", apellido: "Das", icono: NSImage (named: NSImage.Name(rawValue: "employee")), correo: "debasis_das@knowstack.com")
+        let employee10 = Empleado (nombre: "Debasis", apellido: "Das", icono: NSImage (named: "employee"), correo: "debasis_das@knowstack.com")
         
-        let employee11 = Empleado (nombre: "Mary", apellido: "Jane", icono: NSImage (named: NSImage.Name(rawValue: "employee")), correo: "maryjane@knowstack.com")
+        let employee11 = Empleado (nombre: "Mary", apellido: "Jane", icono: NSImage (named: "employee"), correo: "maryjane@knowstack.com")
         
         account1.empleados.append(employee10)
         account1.empleados.append(employee11)
         
         
-        let account2 = Cuenta(nombre:"Account 2",icono:NSImage (named: NSImage.Name(rawValue: "account")))
+        let account2 = Cuenta(nombre:"Account 2",icono:NSImage (named: "account"))
         
-        let employee20 = Empleado (nombre: "John", apellido: "Doe", icono: NSImage (named: NSImage.Name(rawValue: "employee")), correo: "johndoe@knowstack.com")
+        let employee20 = Empleado (nombre: "John", apellido: "Doe", icono: NSImage (named: "employee"), correo: "johndoe@knowstack.com")
         
-        let employee21 = Empleado (nombre: "Jane", apellido: "Doe", icono: NSImage (named: NSImage.Name(rawValue: "employee")), correo: "janedoe@knowstack.com")
+        let employee21 = Empleado (nombre: "Jane", apellido: "Doe", icono: NSImage (named: "employee"), correo: "janedoe@knowstack.com")
         
         account2.empleados.append(employee20)
         account2.empleados.append(employee21)

@@ -45,7 +45,7 @@ class AgregarAlumnoViewController: NSViewController {
     }
     
     @IBAction func onCancelar(_ sender: Any) {
-        dismissViewController(self)
+        dismiss(self)
     }
     
     override func viewDidLoad() {

@@ -18,14 +18,8 @@ class CustomCell: NSTableCellView {
     @IBOutlet weak var Descripcion: NSTextField!
     @IBOutlet weak var Detalle : NSTextField!
     
-    @IBAction func onDetalle(_ sender: Any) {
-        //NSLog("Tu titulo \(Titulo.stringValue)")
-        viewController.eliminarDatoSeleccionado(Fila: Fila)
+    @IBAction func onDetalle(_ sender: Any) {        viewController.eliminarDatoSeleccionado(Fila: Fila)
     }
     
-   /* override func draw(_ dirtyRect: NSRect) {
-        super.draw(dirtyRect)
-        // Drawing code here.
-    }*/
     
 }

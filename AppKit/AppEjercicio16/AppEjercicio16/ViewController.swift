@@ -23,22 +23,13 @@ class ViewController: NSViewController {
         let d = Datos()
         d.Titulo = "Felipe"
         d.Descripcion = "Esto es una descripcion"
-        d.Detalle = "Esto es una detalle"
+        d.Detalle = "Esto es un detalle"
         d.Imagen = "NSUser"
         
         lista.append(d)
         tableView.reloadData()
-        
-
     }
 
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
-
-    
     func actualizar(losDatosTabla datos : Datos,  yTambien Fila: Int) {
         lista.remove(at: Fila)
         lista.append(datos)
@@ -50,22 +41,38 @@ class ViewController: NSViewController {
         tableView.reloadData()
     }
 
-    
     func eliminarDatoSeleccionado(Fila : Int) {
         lista.remove(at: Fila)
         tableView.reloadData()
     }
     
     
+    //La funcion de este metodo es para permitir o no visualizar la siguiente viewController
+    override func shouldPerformSegue(withIdentifier identifier: NSStoryboardSegue.Identifier, sender: Any?) -> Bool {
+        
+        if identifier  == "editar" {
+            let row = self.tableView.selectedRow
+            
+            if  row == -1  {
+                print("Selecciona un registro, por favor")
+                return false
+            }else {
+                return true
+            }
+        } else if identifier  == "agregar" {
+            return  true
+        }
+        return false
+    }
+    
     
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
-       
         
-        if  segue.identifier!.rawValue == "agregar"{
+        if  segue.identifier == "agregar"{
            let vc = segue.destinationController as! AgregarAlumnoViewController
                vc.viewController =  self
            
-        }else if segue.identifier!.rawValue == "editar"{
+        }else if segue.identifier == "editar"{
             var row:Int = 0
             
             var  d = Datos()
@@ -110,7 +117,7 @@ extension ViewController:NSTableViewDataSource, NSTableViewDelegate{
         
         let d: Datos? = lista[row]
         
-        result.Imagen.image = NSImage(named:NSImage.Name(rawValue: (d?.Imagen)!))
+        result.Imagen.image = (NSImage(named: d!.Imagen))!
         
         result.Descripcion.stringValue = (d?.Descripcion)!
         
