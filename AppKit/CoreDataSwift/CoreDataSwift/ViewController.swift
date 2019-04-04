@@ -150,12 +150,6 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         limpiarFormulario()
     }
 
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
-
 
     //NSTableViewDataSource
     func numberOfRows(in tableView: NSTableView) -> Int {

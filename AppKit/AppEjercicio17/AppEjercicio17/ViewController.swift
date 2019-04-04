@@ -10,6 +10,66 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    var imageLocal: NSImage?
+    
+    @IBOutlet weak var img: NSImageView!
+    
+    @IBAction func onSeleccionar(_ sender: Any) {
+        
+        let dialog = NSOpenPanel();
+        
+        dialog.title                   = "Selecciona un archivo tipo .ico";
+        dialog.showsResizeIndicator    = true;
+        dialog.showsHiddenFiles        = false;
+        dialog.canChooseDirectories    = true;
+        dialog.canCreateDirectories    = true;
+        dialog.allowsMultipleSelection = false;
+        dialog.allowedFileTypes        = ["ico","jpg"];
+        
+        if (dialog.runModal() == NSApplication.ModalResponse.OK) {
+            let result = dialog.url // Pathname of the file
+            
+            if (result != nil) {
+                let path = result!.path
+                
+                //let imageData = NSData(contentsOf: result!)
+                imageLocal =  NSImage(contentsOfFile: path)
+                img.image = imageLocal!
+            }
+        } else {
+            // User clicked on "Cancel"
+            return
+        }
+        
+        
+        
+    }
+    
+    @IBAction func onLimpiar(_ sender: Any) {
+        
+        txtCorreo.stringValue  = ""
+        txtNombre.stringValue = ""
+        txtApellido.stringValue = ""
+        
+        
+    }
+    
+    var account1: Cuenta?
+    
+    @IBAction func onGuardar(_ sender: Any) {
+        
+        let employee = Empleado (nombre: txtNombre.stringValue,
+                                 apellido: txtApellido.stringValue,
+                                 icono: imageLocal,
+                                 correo: txtCorreo.stringValue)
+        
+        account1?.empleados.append(employee)
+        ListaMenu.reloadData()
+        
+        
+    }
+    
+    
     @IBOutlet weak var ListaMenu: NSOutlineView!
     
     @IBOutlet weak var txtNombre: NSTextField!
@@ -30,14 +90,14 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let account1 = Cuenta(nombre:"Account 1",icono:NSImage (named: "account"))
+         account1 = Cuenta(nombre:"Account 1",icono:NSImage (named: "account"))
         
         let employee10 = Empleado (nombre: "Debasis", apellido: "Das", icono: NSImage (named: "employee"), correo: "debasis_das@knowstack.com")
         
         let employee11 = Empleado (nombre: "Mary", apellido: "Jane", icono: NSImage (named: "employee"), correo: "maryjane@knowstack.com")
         
-        account1.empleados.append(employee10)
-        account1.empleados.append(employee11)
+        account1!.empleados.append(employee10)
+        account1!.empleados.append(employee11)
         
         
         let account2 = Cuenta(nombre:"Account 2",icono:NSImage (named: "account"))
@@ -49,7 +109,7 @@ class ViewController: NSViewController {
         account2.empleados.append(employee20)
         account2.empleados.append(employee21)
         
-        department1.cuentas.append(account1)
+        department1.cuentas.append(account1!)
         department1.cuentas.append(account2)
         
          self.ListaMenu?.expandItem(nil, expandChildren: true)

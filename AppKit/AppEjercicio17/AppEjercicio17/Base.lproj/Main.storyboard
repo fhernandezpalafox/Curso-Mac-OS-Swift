@@ -853,6 +853,44 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DPk-UO-DQM">
+                                <rect key="frame" x="354" y="222" width="85" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Limpiar" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="6ef-10-PxA">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="onLimpiar:" target="XfG-lQ-9wD" id="5N8-SH-dUa"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rLl-JG-OOp">
+                                <rect key="frame" x="439" y="222" width="89" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Guardar" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jRP-fw-JhJ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="onGuardar:" target="XfG-lQ-9wD" id="lBh-N8-4MT"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rgo-3O-OSG">
+                                <rect key="frame" x="302" y="222" width="52" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="JFt-sq-HlC">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="onSeleccionar:" target="XfG-lQ-9wD" id="XRt-Sk-OhQ"/>
+                                </connections>
+                            </button>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fbJ-Ed-t1a">
+                                <rect key="frame" x="226" y="229" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Xe6-lM-Aqt"/>
+                            </imageView>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="eeR-Ji-gze" secondAttribute="bottom" id="33t-xh-vgE"/>
@@ -863,6 +901,7 @@
                     </view>
                     <connections>
                         <outlet property="ListaMenu" destination="Zwb-fm-uTf" id="lv8-3V-BS3"/>
+                        <outlet property="img" destination="fbJ-Ed-t1a" id="aqb-nq-5mu"/>
                         <outlet property="txtApellido" destination="zDQ-Tp-dSq" id="k2B-sh-cd1"/>
                         <outlet property="txtCorreo" destination="hvH-Qz-Wjb" id="guq-4B-Vm6"/>
                         <outlet property="txtNombre" destination="iwg-9l-wNe" id="6Kb-IB-UQc"/>

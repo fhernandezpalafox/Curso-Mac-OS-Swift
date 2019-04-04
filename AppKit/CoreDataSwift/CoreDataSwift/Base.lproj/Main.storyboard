@@ -816,7 +816,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="uoH-oM-XMk" id="Bsh-0Y-oSL">
-                                            <rect key="frame" x="0.0" y="0.0" width="421" height="236"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="420" height="236"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -861,7 +861,7 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                 </tableColumn>
-                                                <tableColumn identifier="domicilio" width="213" minWidth="10" maxWidth="3.4028234663852886e+38" id="gAf-uC-5AT">
+                                                <tableColumn identifier="domicilio" width="212" minWidth="10" maxWidth="3.4028234663852886e+38" id="gAf-uC-5AT">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Domicilio">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -882,7 +882,7 @@
                                         </tableView>
                                     </subviews>
                                 </clipView>
-                                <scroller key="horizontalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="3O9-tw-2GL">
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="3O9-tw-2GL">
                                     <rect key="frame" x="1" y="243" width="420" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -891,7 +891,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <tableHeaderView key="headerView" id="uoH-oM-XMk">
-                                    <rect key="frame" x="0.0" y="0.0" width="421" height="23"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="420" height="23"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableHeaderView>
                             </scrollView>
@@ -918,7 +918,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="82" y="840"/>
+            <point key="canvasLocation" x="151" y="898"/>
         </scene>
     </scenes>
 </document>
