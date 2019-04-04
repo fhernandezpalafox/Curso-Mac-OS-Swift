@@ -51,7 +51,7 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
     
     func Eliminar() {
         
-        if Tabla.selectedRow != -1 { //verifico si esta seleccionado uan elemento de la tabla
+        if Tabla.selectedRow != -1 { //verifico si esta seleccionado un elemento de la tabla
         
             //llamo la instancia de appDelegate  y de ManagedContext
             let appDelegate = NSApplication.shared.delegate as! AppDelegate

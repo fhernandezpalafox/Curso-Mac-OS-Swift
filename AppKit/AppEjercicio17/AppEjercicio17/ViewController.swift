@@ -21,6 +21,7 @@ class ViewController: NSViewController {
     //Inicializacion de datos de los diferentes modelos
     var department1 = Departamento (nombre:"Depto. Ingenieria",
                                     icono:NSImage (named: "Department-50"))
+    
     var department2 = Departamento (nombre:"Depto. Licenciatura",
                                     icono:NSImage (named: "Department-50"))
     
