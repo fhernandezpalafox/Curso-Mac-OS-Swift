@@ -88,6 +88,7 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         do
         {
           let resultados =  try managedContext.fetch(fetchRequest)
+        
             personas = resultados as [NSManagedObject] 
         }catch let error as NSError{
             print("error \(error)  \(error.userInfo)")
