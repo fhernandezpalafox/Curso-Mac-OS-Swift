@@ -50,6 +50,8 @@ let comida = "carne"
 
 let comidaCompleta = "Teriyaki de pollo"
 
+
+
 switch  comida { //comidaCompleta
 
     case "arroz":

@@ -33,13 +33,13 @@ var diccionario: [String:String] =
 // for i in 0 .. 2 {}
 for i in 0 ..< arreglo.count {
     
-  print(arreglo[i])
+    print(arreglo[i])
     
 }
 
 
 //Ciclo For In
-for itemArreglo  in arreglo{
+for itemArreglo in arreglo{
 
  print(itemArreglo)
     

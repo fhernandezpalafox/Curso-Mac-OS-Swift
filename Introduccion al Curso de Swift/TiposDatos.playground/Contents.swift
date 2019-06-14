@@ -46,7 +46,6 @@ var cadenacaracteres3 : String = cadenaCaracteres + " " + cadenaCaracteres2
 
 
 //Arreglos -> Array
-
 var ejemploArray:[String] = ["Arroz","Pescado","Cebolla","Aceite"]
 
 //Boleanos -> Bool
