@@ -41,6 +41,8 @@ class ViewController: NSViewController {
             if let aController = controller {
                 controller?.presentAsModalWindow(aController)
             }
+        }else {
+            //NSAlert
         }
     }
     

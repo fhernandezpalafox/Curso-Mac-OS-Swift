@@ -11,6 +11,7 @@ import Cocoa
 class ViewController: NSViewController {
 
     var ArregloNumeros : [String:Int32] = ["uno":1,"dos":2,"tres":3,"cuatro":4,"cinco":5,"seis":6,"siete":7,"ocho":8,"nueve":9];
+    //    key, value, key, value
     
     @IBOutlet weak var lblResultado: NSTextField!
     
@@ -21,7 +22,7 @@ class ViewController: NSViewController {
     @IBAction func onOperacion(_ sender: NSButton) {
         var resultado : Int32 = 0
         
-        let cajaTexto1 : Int32  = convertir(param: txtNum1.stringValue.lowercased())
+        let cajaTexto1 : Int32  = convertir(param: txtNum1.stringValue.lowercased()) //Uno =  uno
         
         let cajaTexto2 : Int32 = convertir(param: txtNum2.stringValue.lowercased())
         
@@ -47,14 +48,14 @@ class ViewController: NSViewController {
         lblResultado.stringValue = "El resultado es \(resultado)"
     }
     
-    func convertir(param: String) -> Int32 {
+    func convertir(param: String) -> Int32 { //uno
         
         var valor: Int32 = 0
         var paso: Bool = false
         
         for itemdiccionario in ArregloNumeros {
-            if param == itemdiccionario.key {
-                valor = itemdiccionario.value
+            if param == itemdiccionario.key { //uno == uno
+                valor = itemdiccionario.value // 1
                 paso =  true
                 break
             }

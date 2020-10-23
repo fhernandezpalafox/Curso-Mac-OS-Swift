@@ -23,6 +23,7 @@ class ViewController: NSViewController {
         var resultado : Int32
 
         //Realizacion de las operaciones
+       // C# var num1  =    int.parse(txtNum1.Text);
         num1 = txtNum1.intValue
         num2 = txtNum2.intValue
         resultado = num1 / num2
@@ -31,7 +32,7 @@ class ViewController: NSViewController {
         
         //Usando clases
         let operaciones = Operaciones()
-        let resultado2 = operaciones.sumar(a:num1,num2)
+        let resultado2 = operaciones.sumar(num1,num2)
         print("El resultado es \(resultado2)")
   
     }

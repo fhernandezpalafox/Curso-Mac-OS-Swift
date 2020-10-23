@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -620,7 +620,7 @@
                                         <menuItem title="Show Sidebar" keyEquivalent="s" id="kIP-vf-haE">
                                             <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
                                             <connections>
-                                                <action selector="toggleSourceList:" target="Ady-hI-5gd" id="iwa-gc-5KM"/>
+                                                <action selector="toggleSidebar:" target="Ady-hI-5gd" id="iwa-gc-5KM"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Enter Full Screen" keyEquivalent="f" id="4J7-dP-txa">
@@ -779,7 +779,7 @@ DQ
             <objects>
                 <viewController storyboardIdentifier="Principal" id="cus-99-gFy" customClass="PrincipalViewController" customModule="AppEjercicio15" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="wKa-TX-i4e">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="231"/>
+                        <rect key="frame" x="0.0" y="0.0" width="494" height="231"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QIA-2c-EwH">
@@ -810,7 +810,7 @@ DQ
                 </viewController>
                 <customObject id="8Qb-zJ-Lr0" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="112" y="1004"/>
+            <point key="canvasLocation" x="86" y="983"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="YmB-g2-QcJ">
@@ -843,7 +843,7 @@ DQ
                 </viewController>
                 <customObject id="EzR-zb-w9J" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="535" y="790"/>
+            <point key="canvasLocation" x="550" y="875"/>
         </scene>
     </scenes>
 </document>

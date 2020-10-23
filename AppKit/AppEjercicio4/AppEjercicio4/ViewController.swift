@@ -31,7 +31,11 @@ class ViewController: NSViewController {
         // Do any additional setup after loading the view.
         
         slider.intValue = 25
+        
         lblinformacion.stringValue = String(slider.intValue)
+        
+        imagen.setFrameSize(NSMakeSize(CGFloat(slider.floatValue), CGFloat(slider.floatValue)))
+        
         title = "Slider"
 
     }

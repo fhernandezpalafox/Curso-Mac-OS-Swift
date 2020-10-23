@@ -16,7 +16,7 @@ class ViewController: NSViewController {
         alert.addButton(withTitle: "Continuar")
         alert.addButton(withTitle: "Cancelar")
         alert.messageText = "Alerta sencilla"
-        alert.informativeText = "Desea eliminar el registro seleccionado"
+        alert.informativeText = "Desea eliminar el registro seleccionado?"
         alert.alertStyle = .warning //NSAlert.Style.warning  //.warning
         
         let res: NSApplication.ModalResponse = alert.runModal()
@@ -39,6 +39,7 @@ class ViewController: NSViewController {
         alert.messageText = "Alerta sencilla"
         alert.informativeText = "Desea eliminar el registro seleccionado"
         alert.alertStyle = .warning
+        
         alert.beginSheetModal(for: view.window!, completionHandler: {(_ returnCode: NSApplication.ModalResponse) -> Void in
             if returnCode == .alertFirstButtonReturn {
                 print("Boton continuar clickeado")

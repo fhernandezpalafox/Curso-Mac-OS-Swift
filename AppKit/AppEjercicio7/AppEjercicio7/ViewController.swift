@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class ViewController: NSViewController , NSTableViewDataSource {
+class ViewController: NSViewController, NSTableViewDataSource  {
     
     @IBOutlet weak var tabla: NSTableView!
     @IBOutlet weak var txtNombre: NSTextField!
@@ -40,7 +40,7 @@ class ViewController: NSViewController , NSTableViewDataSource {
     
     @IBAction func eliminar(_ sender: Any) {
     
-        let row: Int =  self.tabla.selectedRow
+        let row: Int =  self.tabla.selectedRow // self = this
         
         if row != -1 {
              lista.remove(at: row)

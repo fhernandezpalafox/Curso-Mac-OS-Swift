@@ -16,14 +16,15 @@ class Artista {
     func Imprimir() {
         print("Tu nombre es \(Nombre) y eres un \(Descripcion)")
     }
-    func obtenerEdad(num1:Int,num2:Int) -> Int{
+    
+    func obtenerEdad(_ num1:Int,num2:Int) -> Int{
         return num1 - num2
     }
 }
 
 let artista = Artista()
 
-var resultado = artista.obtenerEdad(num1:2017,num2:1987)
+var resultado = artista.obtenerEdad(2017,num2:1987)
 
 artista.Imprimir()
 
@@ -63,7 +64,7 @@ class Cancion {
         }
     }
     
-    func Copia() -> Any{
+    func Copia() -> Any {
         let copy = self
         return copy
     }

@@ -46,6 +46,7 @@ class ViewController: NSViewController, WKNavigationDelegate {
         }
     }
 
+    //Los estados de la nevegación 
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
         indicator.isHidden = false
         indicator.startAnimation(self)

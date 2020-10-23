@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -620,7 +620,7 @@
                                         <menuItem title="Show Sidebar" keyEquivalent="s" id="kIP-vf-haE">
                                             <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
                                             <connections>
-                                                <action selector="toggleSourceList:" target="Ady-hI-5gd" id="iwa-gc-5KM"/>
+                                                <action selector="toggleSidebar:" target="Ady-hI-5gd" id="iwa-gc-5KM"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Enter Full Screen" keyEquivalent="f" id="4J7-dP-txa">
@@ -695,17 +695,17 @@
                         </connections>
                     </window>
                     <connections>
-                        <segue destination="PJw-a8-HMI" kind="relationship" relationship="window.shadowedContentViewController" id="381-Rf-qsv"/>
+                        <segue destination="PJw-a8-HMI" kind="relationship" relationship="window.shadowedContentViewController" id="NWo-V1-2Gv"/>
                     </connections>
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-45" y="255"/>
+            <point key="canvasLocation" x="62" y="247"/>
         </scene>
         <!--Tab View Controller-->
         <scene sceneID="oHw-vo-2Ib">
             <objects>
-                <tabViewController selectedTabViewItemIndex="1" id="PJw-a8-HMI" sceneMemberID="viewController">
+                <tabViewController selectedTabViewItemIndex="2" id="PJw-a8-HMI" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem label="Primera vista" identifier="" image="NSBluetoothTemplate" id="rot-R5-Ko8"/>
                         <tabViewItem label="Segunda vista" identifier="" image="NSAddTemplate" id="byD-WC-BNb"/>
@@ -714,7 +714,7 @@
                     <tabView key="tabView" type="noTabsNoBorder" id="r5h-13-z9V">
                         <rect key="frame" x="0.0" y="0.0" width="475" height="325"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <font key="font" metaFont="message"/>
+                        <font key="font" metaFont="system"/>
                         <connections>
                             <outlet property="delegate" destination="PJw-a8-HMI" id="R3Y-NB-7J3"/>
                         </connections>
@@ -728,7 +728,7 @@
                 </tabViewController>
                 <customObject id="dmj-vU-p5V" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-48" y="732"/>
+            <point key="canvasLocation" x="151" y="720"/>
         </scene>
         <!--Primera Vista-->
         <scene sceneID="H9a-A0-s86">
@@ -758,6 +758,25 @@
                                     <action selector="eventAceptar:" target="eZo-dD-8fl" id="jHG-aA-iW3"/>
                                 </connections>
                             </button>
+                            <tabView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iCx-z1-gOz">
+                                <rect key="frame" x="84" y="27" width="294" height="143"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <font key="font" metaFont="system"/>
+                                <tabViewItems>
+                                    <tabViewItem label="Tab" identifier="" id="u4e-nz-R9L">
+                                        <view key="view" id="Tne-mm-mQc">
+                                            <rect key="frame" x="10" y="33" width="274" height="97"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                    </tabViewItem>
+                                    <tabViewItem label="View" identifier="" id="Mby-o4-G2o">
+                                        <view key="view" id="ml1-SH-bnv">
+                                            <rect key="frame" x="10" y="33" width="274" height="97"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                    </tabViewItem>
+                                </tabViewItems>
+                            </tabView>
                         </subviews>
                     </view>
                     <connections>
@@ -766,7 +785,7 @@
                 </viewController>
                 <customObject id="jTy-Ye-4tf" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="568" y="380"/>
+            <point key="canvasLocation" x="713" y="368"/>
         </scene>
         <!--Segunda Vista _-->
         <scene sceneID="8lE-Us-RLi">
@@ -801,7 +820,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="WEo-6M-zc5" id="p50-YS-esF">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="menu"/>
+                                    <font key="font" metaFont="system"/>
                                     <menu key="menu" id="bPx-nt-NqT">
                                         <items>
                                             <menuItem title="Item 1" state="on" id="WEo-6M-zc5"/>
@@ -824,7 +843,7 @@
                 </viewController>
                 <customObject id="mY9-Ae-Cfi" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="121" y="1277"/>
+            <point key="canvasLocation" x="100" y="1331"/>
         </scene>
     </scenes>
     <resources>

@@ -19,6 +19,8 @@ class AgregarAlumnoViewController: NSViewController {
     
     var row = -1
     
+    
+    
     @IBOutlet weak var txtTitulo: NSTextField!
     
     @IBOutlet weak var txtDescripcion: NSTextField!

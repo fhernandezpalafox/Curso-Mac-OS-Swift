@@ -11,9 +11,9 @@ import Foundation
 class Operaciones {
     
     //sumar(a:2,b:2)
-    //sumar(a:2,3)
+    //sumar(a:2,3) = SI
     //sumar(2,3)
-    func sumar(a: Int32,_ b: Int32) -> Int32 {
+    func sumar(_ a: Int32,_ b: Int32) -> Int32 {
         return a + b
     }
     
