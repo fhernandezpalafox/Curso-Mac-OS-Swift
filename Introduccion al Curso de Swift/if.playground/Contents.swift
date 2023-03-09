@@ -46,18 +46,18 @@ if  miPeso >= 85 || miEstatura == 1.85 {
 
 //SWITCH
 
-let comida = "carne"
+let comida = "pollo"
 
 let comidaCompleta = "Teriyaki de pollo"
 
 
 
-switch  comida { //comidaCompleta
+switch comida { //comidaCompleta
 
     case "arroz":
         print("Que rico Arroz!")
     break
-    case "pollo","carne","ensalada":
+    case "carne","ensalada":
         print("Cualquiera esta bien")
     break
     //let x = comida

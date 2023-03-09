@@ -29,7 +29,6 @@ for  i = 0; i < nombres.count; i += 1 {
 */
 
 if !nombres.isEmpty {
-    
     for item in nombres {
        print(item)
     }

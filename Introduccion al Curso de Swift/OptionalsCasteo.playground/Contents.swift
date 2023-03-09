@@ -6,9 +6,13 @@ import UIKit
 
 var numeroEntero : Int = 24
 
-var numeroString : String = "1"
+var numeroString : String = ""
 
 //tryParse(3,)
+var i  = Int(numeroString)
+
+print(Int(numeroString))
+
 var suma : Int = Int(numeroString)! + numeroEntero
 
 var sumaString : String = String(suma)
